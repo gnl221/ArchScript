@@ -59,17 +59,6 @@ fi
 
 export PATH=$PATH:~/.local/bin
 
-# Theming DE if user chose FULL installation
-if [[ $INSTALL_TYPE == "FULL" ]]; then
-  if [[ $DESKTOP_ENV == "kde" ]]; then
-    cp -r ~/ArchTitus/configs/.config/* ~/.config/
-    pip install konsave
-    konsave -i ~/ArchTitus/configs/kde.knsv
-    sleep 1
-    konsave -a kde
- fi
-fi
-
 echo -ne "
 -------------------------------------------------------------------------
                     SYSTEM READY FOR 3-post-setup.sh
