@@ -49,7 +49,6 @@ fuse3
 fuseiso
 gamemode
 gcc
-gimp
 gparted
 gptfdisk
 grub-customizer
