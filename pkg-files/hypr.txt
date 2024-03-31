@@ -5,7 +5,9 @@ neovim
 viewnior
 rofi
 pavucontrol
-thunar
+nautilus
+nautilus-admin
+nautilus-gtkhash
 starship
 wl-clipboard
 wf-recorder
@@ -15,7 +17,6 @@ ffmpegthumbnailer
 tumbler
 playerctl
 noise-suppression-for-voice
-thunar-archive-plugin
 kitty
 waybar-hyprland
 wlogout
