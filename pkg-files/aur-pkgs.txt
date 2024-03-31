@@ -5,6 +5,7 @@ dxvk-bin
 github-desktop-bin
 mangohud
 mangohud-common
+microsoft-edge-stable-bin
 nerd-fonts-fira-code
 nordic-darker-standard-buttons-theme
 nordic-darker-theme
