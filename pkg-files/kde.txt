@@ -3,7 +3,6 @@ sddm
 dolphin
 --END OF MINIMAL INSTALL--
 ark
-audiocd-kio
 bluedevil
 breeze
 breeze-gtk
@@ -16,12 +15,12 @@ kde-gtk-config
 kcodecs
 kcoreaddons
 kdeplasma-addons
-kgamma5
+kgamma
 kgpg
 kinfocenter
 konsole
 kscreen
-kvantum-qt5
+kvantum-qt6
 kwalletmanager
 kwayland-integration
 kwallet-pam
