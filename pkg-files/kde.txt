@@ -1,5 +1,6 @@
 plasma-desktop
 sddm
+sddm-kcm
 dolphin
 --END OF MINIMAL INSTALL--
 ark
