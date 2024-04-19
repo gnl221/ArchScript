@@ -8,6 +8,8 @@ bluedevil
 breeze
 breeze-gtk
 discover
+packagekit-qt5
+packagekit-qt6
 extra-cmake-modules
 filelight
 gwenview
