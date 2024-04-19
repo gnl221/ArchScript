@@ -43,6 +43,7 @@ dtc
 efibootmgr
 egl-wayland
 exfat-utils
+firefox
 flex
 fuse2
 fuse3
@@ -58,7 +59,6 @@ gst-plugins-ugly
 haveged
 htop
 jdk-openjdk
-kitty
 libdvdcss
 libtool
 lsof
