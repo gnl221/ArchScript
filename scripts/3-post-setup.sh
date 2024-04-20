@@ -61,8 +61,9 @@ echo -ne "
 if [[ ${DESKTOP_ENV} == "kde" ]]; then
   systemctl enable sddm.service
   if [[ ${INSTALL_TYPE} == "FULL" ]]; then
-    echo [Theme] >>  /etc/sddm.conf
-    echo Current="Breeze Dark" >> /etc/sddm.conf
+    echo Numlock=="on" >> /etc/sddm.conf.d/kde_settings.conf
+    echo [Theme] >>  /etc/sddm.conf.d/kde_settings.conf
+    echo Current="breeze" >> /etc/sddm.conf.d/kde_settings.conf
   fi
 
 elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
