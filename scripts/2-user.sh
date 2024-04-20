@@ -59,12 +59,11 @@ export PATH=$PATH:~/.local/bin
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "FULL" ]]; then
   if [[ $DESKTOP_ENV == "kde" ]]; then
-    cp -r ~/ArchTitus/configs/.config/* ~/.config/
+    cp -r ~/ArchSript/configs/.config/* ~/.config/
     pip install konsave
-    konsave -i ~/ArchTitus/configs/kde.knsv
+    konsave -i ~/ArchScript/configs/kde.knsv
     sleep 1
     konsave -a kde
-  elif [[ $DESKTOP_ENV == "openbox" ]]; then
     cd ~
     git clone https://github.com/gnl221/dotfiles-arch
     ./dotfiles-arch/install.sh
