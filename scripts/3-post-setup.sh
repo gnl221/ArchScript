@@ -65,7 +65,6 @@ if [[ ${DESKTOP_ENV} == "kde" ]]; then
     echo Numlock=="on" >> /etc/sddm.conf.d/kde_settings.conf
     echo [Theme] >>  /etc/sddm.conf.d/kde_settings.conf
     echo Current="breeze" >> /etc/sddm.conf.d/kde_settings.conf
-    kderice-restore.sh
   fi
 
 elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
