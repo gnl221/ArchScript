@@ -5,12 +5,12 @@
 # @brief User customizations and AUR package installation.
 echo -ne "
 ----------------------------------
-   █████╗ ██████╗  ██████╗██╗  ██╗
+   █████╗ ██████╗   ██████╗██╗  ██╗
   ██╔══██╗██╔══██╗██╔════╝██║  ██║
-  ███████║██████╔╝██║     ███████║  
+  ███████║██████╔╝██║      ███████║  
   ██╔══██║██╔══██╗██║     ██╔══██║  
-  ██║  ██║██║  ██║╚██████╗██║  ██║  
-  ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   
+  ██║  ██║██║   ██║╚█████╗██║  ██║  
+  ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═══╝╚═╝  ╚═╝   
 -----------------------------------
    Automated Arch Linux Installer
 ----------------------------------
@@ -21,11 +21,8 @@ source $HOME/ArchScript/configs/setup.conf
 
   cd ~
   mkdir "/home/$USERNAME/.cache"
-  touch "/home/$USERNAME/.cache/zshhistory"
-  git clone "https://github.com/ChrisTitusTech/zsh"
-  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
   git clone --depth=1 https://github.com/gnl221/dotfiles-arch.git ~/dotfiles-arch
-  ln -s "~/zsh/.zshrc" ~/.zshrc
+  ln -s "~/dotfiles-arch/.bashrc" ~/.bashrc
 
 sed -n '/'$INSTALL_TYPE'/q;p' ~/ArchScript/pkg-files/${DESKTOP_ENV}.txt | while read line
 do
