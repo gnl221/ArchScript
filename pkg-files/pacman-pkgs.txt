@@ -39,6 +39,7 @@ code
 cronie
 cups
 dialog
+discord
 dmidecode
 dnsmasq
 dtc
@@ -94,6 +95,7 @@ steam
 swtpm
 synergy
 terminus-font
+thunderbird
 traceroute
 ttf-droid
 ttf-hack
