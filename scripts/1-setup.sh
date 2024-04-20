@@ -113,14 +113,13 @@ echo -ne "
 # Graphics Drivers find and install
 gpu_type=$(lspci)
 if grep -E "NVIDIA|GeForce" <<< ${gpu_type}; then
-    pacman -S --noconfirm --needed nvidia
-	nvidia-xconfig
+    pacman -S --noconfirm --needed nvidia nvidia-xconfig nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
 elif lspci | grep 'VGA' | grep -E "Radeon|AMD"; then
-    pacman -S --noconfirm --needed xf86-video-amdgpu
+    pacman -S --noconfirm --needed xf86-video-amdgpu lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
 elif grep -E "Integrated Graphics Controller" <<< ${gpu_type}; then
-    pacman -S --noconfirm --needed libva-intel-driver libvdpau-va-gl lib32-vulkan-intel vulkan-intel libva-intel-driver libva-utils lib32-mesa
+    pacman -S --noconfirm --needed libva-intel-driver libvdpau-va-gl lib32-vulkan-intel vulkan-intel libva-intel-driver libva-utils lib32-mesa vulkan-icd-loader lib32-vulkan-icd-loader
 elif grep -E "Intel Corporation UHD" <<< ${gpu_type}; then
-    pacman -S --needed --noconfirm libva-intel-driver libvdpau-va-gl lib32-vulkan-intel vulkan-intel libva-intel-driver libva-utils lib32-mesa
+    pacman -S --needed --noconfirm libva-intel-driver libvdpau-va-gl lib32-vulkan-intel vulkan-intel libva-intel-driver libva-utils lib32-mesa vulkan-icd-loader lib32-vulkan-icd-loader
 fi
 #SETUP IS WRONG THIS IS RUN
 if ! source $HOME/ArchScript/configs/setup.conf; then
