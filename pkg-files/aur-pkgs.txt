@@ -1,4 +1,5 @@
 --END OF MINIMAL INSTALL--
+appimagelauncher
 autojump
 bridge-utils
 dxvk-bin
