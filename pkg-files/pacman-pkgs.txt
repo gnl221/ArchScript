@@ -5,6 +5,8 @@ xorg-apps
 xorg-drivers
 xorg-xkill
 xorg-xinit
+xorg-xwayland
+xwaylandvideobridge
 xterm
 base-devel
 libx11
