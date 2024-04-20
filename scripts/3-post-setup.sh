@@ -59,6 +59,7 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 if [[ ${DESKTOP_ENV} == "kde" ]]; then
+  mkdir -p "/etc/sddm.conf.d"
   systemctl enable sddm.service
   if [[ ${INSTALL_TYPE} == "FULL" ]]; then
     echo Numlock=="on" >> /etc/sddm.conf.d/kde_settings.conf
