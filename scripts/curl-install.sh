@@ -12,11 +12,11 @@ fi
 echo "Installing git."
 pacman -Sy --noconfirm --needed git glibc
 
-echo "Cloning the ArchTitus Project"
-git clone https://github.com/christitustech/ArchTitus
+echo "Cloning the ArchScript Project"
+git clone https://github.com/gnl221/ArchScript
 
-echo "Executing ArchTitus Script"
+echo "Executing ArchScript"
 
-cd $HOME/ArchTitus
+cd $HOME/ArchScript
 
 exec ./archtitus.sh
