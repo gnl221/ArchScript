@@ -31,6 +31,7 @@ layer-shell-qt
 milou
 okular
 oxygen
+plasma-browser-integration
 plasma-nm
 plasma-pa
 plasma-wayland-session
