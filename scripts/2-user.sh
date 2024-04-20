@@ -21,8 +21,6 @@ source $HOME/ArchScript/configs/setup.conf
 
   cd ~
   mkdir "/home/$USERNAME/.cache"
-  git clone --depth=1 https://github.com/gnl221/dotfiles-arch.git ~/dotfiles-arch
-  ln -s "~/dotfiles-arch/.bashrc" ~/.bashrc
 
 sed -n '/'$INSTALL_TYPE'/q;p' ~/ArchScript/pkg-files/${DESKTOP_ENV}.txt | while read line
 do
