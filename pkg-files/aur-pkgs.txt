@@ -3,7 +3,6 @@ autojump
 bridge-utils
 dxvk-bin
 github-desktop-bin
-konsave
 mangohud
 mangohud-common
 nerd-fonts-fira-code
