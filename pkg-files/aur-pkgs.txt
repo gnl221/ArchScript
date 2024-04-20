@@ -7,10 +7,6 @@ konsave
 mangohud
 mangohud-common
 nerd-fonts-fira-code
-nordic-darker-standard-buttons-theme
-nordic-darker-theme
-nordic-kde-git
-nordic-theme
 ocs-url
 plymouth-git
 snapper-gui-git
