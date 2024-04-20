@@ -11,5 +11,6 @@ ocs-url
 plymouth-git
 snapper-gui-git
 ttf-meslo
+vim-plug
 vde2
 
