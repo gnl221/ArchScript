@@ -110,7 +110,3 @@ wine-gecko
 wine-mono
 winetricks
 zip
-zsh
-zsh-completions
-zsh-syntax-highlighting
-zsh-autosuggestions
