@@ -13,6 +13,7 @@ libx11
 libxft
 libxinerama
 freetype2
+fwupd
 binutils
 dosfstools
 linux-headers
