@@ -55,6 +55,7 @@ gamemode
 gcc
 gparted
 gptfdisk
+grub-btrfs
 grub-customizer
 gst-libav
 gst-plugins-good
