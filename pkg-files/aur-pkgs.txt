@@ -8,6 +8,7 @@ mangohud
 mangohud-common
 nerd-fonts-fira-code
 ocs-url
+octopi
 plymouth-git
 snapper-gui-git
 ttf-meslo
