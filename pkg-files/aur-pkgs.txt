@@ -11,6 +11,8 @@ ocs-url
 octopi
 plymouth-git
 snapper-gui-git
+snap-pac-grub
+snapper-support
 ttf-meslo
 vim-plug
 vde2
