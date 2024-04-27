@@ -13,6 +13,8 @@ extra-cmake-modules
 filelight
 gwenview
 kate
+kaccounts-integration
+kaccounts-providers
 kde-gtk-config
 kcodecs
 kcoreaddons
