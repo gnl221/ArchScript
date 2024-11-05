@@ -40,7 +40,7 @@ echo -ne "
                     Setting up $iso mirrors for faster downloads
 -------------------------------------------------------------------------
 "
-reflector --country 'United States' --sort rate --save /etc/pacman.d/mirrorlist
+reflector --country 'United States' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 mkdir /mnt &>/dev/null # Hiding error message if any
 echo -ne "
 -------------------------------------------------------------------------
