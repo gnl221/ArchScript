@@ -28,6 +28,7 @@ Setting up mirrors for optimal download
 source $CONFIGS_DIR/setup.conf
 iso=$(curl -4 ifconfig.co/country-iso)
 timedatectl set-ntp true
+pacman -Sy --noconfirm
 pacman -S --noconfirm archlinux-keyring #update keyrings to latest to prevent packages failing to install
 pacman -S --noconfirm --needed pacman-contrib terminus-font
 setfont ter-v22b
@@ -39,7 +40,7 @@ echo -ne "
                     Setting up $iso mirrors for faster downloads
 -------------------------------------------------------------------------
 "
-reflector --country 'United States' --age 6 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+reflector --country 'United States' --sort rate --save /etc/pacman.d/mirrorlist
 mkdir /mnt &>/dev/null # Hiding error message if any
 echo -ne "
 -------------------------------------------------------------------------
@@ -151,7 +152,6 @@ echo -ne "
                     Arch Install on Main Drive
 -------------------------------------------------------------------------
 "
-pacman Sy --noconfirm --needed
 pacstrap /mnt base base-devel linux linux-firmware vim nano sudo archlinux-keyring wget libnewt --noconfirm --needed
 echo "keyserver hkp://keyserver.ubuntu.com" >> /mnt/etc/pacman.d/gnupg/gpg.conf
 cp -R ${SCRIPT_DIR} /mnt/root/ArchScript
