@@ -34,7 +34,6 @@ bluez-libs
 bluez-utils
 bridge-utils
 btrfs-progs
-celluloid
 cmatrix
 code
 cronie
@@ -54,14 +53,15 @@ fuse3
 fuseiso
 gamemode
 gcc
+gimp
 gparted
 gptfdisk
-grub-btrfs
 grub-customizer
 gst-libav
 gst-plugins-good
 gst-plugins-ugly
 haveged
+handbrake
 htop
 jdk-openjdk
 libdvdcss
@@ -82,6 +82,12 @@ papirus-icon-theme
 patch
 picom
 pkgconf
+pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+pipewire-v4l2
+pipewire-zeroconf
 powerline-fonts
 pulseaudio
 pulseaudio-alsa
@@ -96,6 +102,7 @@ snapper
 steam
 swtpm
 synergy
+systemd-resolvconf
 terminus-font
 thunderbird
 traceroute
@@ -111,4 +118,7 @@ which
 wine-gecko
 wine-mono
 winetricks
+wireguard-tools
+wireless_tools
+wireplumber
 zip
