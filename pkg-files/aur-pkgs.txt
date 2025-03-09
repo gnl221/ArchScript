@@ -4,8 +4,6 @@ autojump
 bridge-utils
 dxvk-bin
 github-desktop-bin
-mangohud
-mangohud-common
 nerd-fonts-fira-code
 ocs-url
 octopi
