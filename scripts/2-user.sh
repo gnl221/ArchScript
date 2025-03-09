@@ -58,11 +58,8 @@ export PATH=$PATH:~/.local/bin
 if [[ $INSTALL_TYPE == "FULL" ]]; then
   if [[ $DESKTOP_ENV == "kde" ]]; then
     cp -r ~/ArchSript/configs/.config/* ~/.config/
-    pip install konsave
-    konsave -i ~/ArchScript/configs/kde.knsv
-    sleep 1
-    konsave -a kde
-    cd ~
+    cd "/home/$USERNAME/"
+    rm "home/$USERNAME/.bashrc"
     git clone https://github.com/gnl221/dotfiles-arch
     ./dotfiles-arch/install.sh
   fi
